@@ -1,0 +1,47 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+*.secret
+*.secrets
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
+docker-compose.override.yml
+docker-compose.local.yml
+.buildx/
+
+# Kubernetes
+.kube/
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+
+# Helm
+charts/*/charts/
+charts/*/tmp/
+*.tgz
+
+# Kustomize / generated manifests
+*.generated.yaml
+*.rendered.yaml
+rendered/
+manifests/generated/
+
+# Skaffold / Tilt / local cluster tooling
+.skaffold/
+.tiltbuild/
+.minikube/
+
+# Runtime and temp files
+tmp/
+.tmp/
+*.pid
+*.sock
+*.swp
+*~
+.DS_Store
